@@ -1,0 +1,14 @@
+kind = sequential
+title = "Edge Detector"
+size = [-16, -16, 16, 16]
+dialogue = [
+  (alien_centered, "Now that you know how to make a clock signal, you need a way to have other systems synchronize with it.  A simple rising edge detector should do the trick."),
+  (alien_centered, "Oh, and your friends at the Bureau for Antagonizing Test Subjects are still at it.  But at least they'll let you use three components this time."),
+  (info, "The input will provide an erratic stream of 1s and 0s.  Using only three components, build a circuit that reads the input each tick and outputs a 1 whenever the input goes from to 0 to 1 (which is know as a "rising edge").  It should send a 0 in any other circumstance.")
+]
+
+post_mortem = [  
+    (alien_centered, "Fun fact: you can make a falling edge detector by using a NOR instead of an AND.  That one will react whenever the input goes from 1 to 0..
+
+Even funner fact: you can make a dual edge detector that will trigger on both edges by using a XOR.")
+]

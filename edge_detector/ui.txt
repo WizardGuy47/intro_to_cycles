@@ -1,0 +1,1 @@
+[text id="description" text="Create a rising edge detector." size=24 y=90]
