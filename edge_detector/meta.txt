@@ -8,6 +8,6 @@ dialogue = [
 ]
 
 post_mortem = [  
-    (alien_centered, "You can also make a falling edge detector that reacts when the input goes from 0 to 1. Or you can make a dual edge detector that triggers on both edges.  You just need to use a different logic gate."),
+    (alien_centered, "You can also make a falling edge detector that reacts when the input goes from 1 to 0. Or you can make a dual edge detector that triggers on both edges.  You just need to use a different logic gate."),
     (alien_centered, "By the way, we hear that - like us - your world also has useless bureaucrats who just exist to make life difficult for others.  Perhaps humans are more advanced than we thought.")
 ]
