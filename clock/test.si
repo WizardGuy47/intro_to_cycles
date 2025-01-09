@@ -1,0 +1,46 @@
+const CORRECT_OUTPUT = [0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1]
+
+def on_reset($scratch_space: [Int], test: Int) {
+
+    ui_set_text("description", `Generate a clock cycle.`)
+
+}
+
+def get_input($scratch_space: [Int], tick: Int, $inputs: [Int]) {
+
+    var a = random(256)
+    var b = random(256)
+
+    inputs[0] = a
+    inputs[1] = b
+
+    //ui_set_text("description", `What is {a} * {b}?`)
+
+}
+
+def check_output($scratch_space: [Int], tick: Int, inputs: [Int], outputs: [Int]) TestResult {
+
+    if get_component_count() > 3 {
+
+        set_error(`Do not use more than 2 components.`)
+        return fail
+
+    }
+
+    if CORRECT_OUTPUT[tick] != outputs[0] {
+
+        if CORRECT_OUTPUT[tick] == 0 {
+            set_error(`Output should be 0`)
+        }
+
+        if CORRECT_OUTPUT[tick] == 1 {
+            set_error(`Output should be 1`)
+        }
+
+        return fail
+    }
+    if tick == CORRECT_OUTPUT.len() - 1 {
+        return win
+    }
+
+}

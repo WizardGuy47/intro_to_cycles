@@ -1,0 +1,1 @@
+[text id="description" text="Create a simple clock" size=24 y=90]

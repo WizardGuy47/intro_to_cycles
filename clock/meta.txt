@@ -1,0 +1,14 @@
+kind = sequential
+title = "Clock"
+size = [-16, -16, 16, 16]
+dialogue = [
+  (alien_centered, "Computers need some way for their various systems to coordinate with each other.  Usually this is done by having some sort of clock mechanism send out a repeating signal which other components use to synchronize their efforts."),
+  (alien_centered, "We want you to build a simple clock for us.  It's so simple, in fact, that our Bureau for Antagonizing Test Subjects has decided to add some extra challenge by limiting how many parts you can use."),
+  (info, "Using only two components, build a circuit that repeats the following 8-tick cycle indefinitely: output a 0 for each of the first 4 ticks, then output a 1 for each of the next 4."),
+  (info, "Note that each custom component counts as the same number of components used to in its design, so you can't use them to get around the limit.")
+]
+post_mortem = [  
+    (alien_centered, "Of COURSE we have a Bureau for Antagonizing Test Subjects.  It's a fact of life that any sufficiently advanced species will develop bureaucrats and we need some way to keep them busy.
+
+Sorry about that.")
+]
